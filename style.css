@@ -42,3 +42,119 @@ section{
     background-repeat: no-repeat;
     background-position: right;
 }
+.single-experience{
+    box-shadow: 10px 10px 40px gray;
+    height: 70%;
+    background-color: white;
+}
+.experience-area{
+    background-image: url("images/exp-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+#full-stack{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, lightsalmon, tomato);
+    border-image-slice: 1;
+}
+#baby-web{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, blue, cyan);
+    border-image-slice: 1;
+}
+footer{
+    text-align: center;
+    font-size: 12px;
+}
+.progressbar{
+    background-image: linear-gradient(180deg, cyan, lightblue);
+    width: 30%;
+    padding: 10px;
+    border-radius: 30px;
+}
+.progressbar li{
+    list-style-type:none ;
+    margin: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+}
+.progressbar li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0px;
+    background-color: rgb(170, 167, 173);
+    width: 100%;
+    height: 25px;
+    border-radius: 1000px;
+}
+.progressbar li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0px;
+    background-color:rgb(170, 167, 173);
+    width: 0%;
+    height: 25px;
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+}
+.progressbar li.html::after{
+    animation-name: html;
+    background-image: linear-gradient(180deg, lightyellow, tomato);
+}
+@keyframes html{
+    to{
+        width: 93%;
+    }
+}
+.progressbar li.css::after{
+    animation-name: css;
+    background-image: linear-gradient(180deg, lightyellow, tomato);
+}
+@keyframes css{
+    to{
+        width: 85%;
+    }
+}
+.progressbar li.js::after{
+    animation-name: js;
+    background-image: linear-gradient(180deg, lightyellow, tomato);
+}
+@keyframes js{
+    to{
+        width: 70%;
+    }
+}
+.progressbar li.py::after{
+    animation-name: py;
+    background-image: linear-gradient(180deg, lightyellow, tomato);
+}
+@keyframes py{
+    to{
+        width: 65%;
+    }
+}
+.progressbar li.ph::after{
+    animation-name: ph;
+    background-image: linear-gradient(180deg, lightyellow, tomato);
+}
+@keyframes ph{
+    to{
+        width: 75%;
+    }
+}
+.progressbar li.ru::after{
+    animation-name: ru;
+    background-image: linear-gradient(180deg, lightyellow, tomato);
+}
+@keyframes ru{
+    to{
+        width: 75%;
+    }
+}
